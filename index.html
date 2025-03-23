@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Glam - Where Glam Meets Identity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="images/Fav-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <div class="banner">End Of Season Sale is Live: Up to 50% + Surprise Gifts</div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-top">
+            <span class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="nav-right">
+                <span class="icon profile-icon" onclick="openDialog()">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                <span class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+                <span class="icon">
+                    <i class='bx bx-cart-alt'></i>
+                </span>
+            </div>
+        </div>
+        
+        <!-- <div class="nav-links">
+            <a href="#">New Arrivals</a>
+            <a href="#">Brands</a>
+            <a href="#">Makeup</a>
+            <a href="#">Skin</a>
+            <a href="#">Hair</a>
+            <a href="#">Fragrance</a>
+            <a href="#">Combos & Gift Sets</a>
+        </div>  -->
+         
+        <div class="nav-links">
+            <a href="#">New Arrivals</a>
+
+            <div class="nav-item">
+                <a class="nav-link">Brands ▼</a>
+                <div class="dropdown">
+                    <a href="#">Focallure Beauty</a>
+                    <a href="#">Lamel</a>
+                    <a href="#">PINKFLASH</a>
+                    <a href="#">Revolution Beauty</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link">Makeup ▼</a>
+                <div class="dropdown">
+                    <a href="#">Lipsticks</a>
+                    <a href="#">Foundations</a>
+                    <a href="#">Blush</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link">Skin ▼</a>
+                <div class="dropdown">
+                    <a href="#">Moisturizers</a>
+                    <a href="#">Serums</a>
+                    <a href="#">Face Wash</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link">Hair ▼</a>
+                <div class="dropdown">
+                    <a href="#">Shampoo</a>
+                    <a href="#">Conditioners</a>
+                    <a href="#">Hair Masks</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link">Fragrance ▼</a>
+                <div class="dropdown">
+                    <a href="#">Perfumes</a>
+                    <a href="#">Body Sprays</a>
+                    <a href="#">Essential Oils</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link">Combos & Gift Sets ▼</a>
+                <div class="dropdown">
+                    <a href="#">Gift Sets</a>
+                    <a href="#">Combo Offers</a>
+                    <a href="#">Limited Edition</a>
+                </div>
+            </div>
+
+    </nav>
+ 
+        
+     <!-- Carousel Slider -->
+
+     <div class="carousel-container">
+        <div class="carousel">
+        <img src="images/slider1.png" alt="Slide 1">
+        <img src="images/slider2.png" alt="Slide 2">
+        <img src="images/slider3.png" alt="Slide 3">
+        <img src="images/slider4.png" alt="Slide 3">
+        <img src="images/slider5.png" alt="Slide 3">
+        </div>
+    </div>
+
+     <!-- Profile Dialog -->
+      
+        <div class="dialog-overlay" id="dialog">
+            <div class="dialog-box">
+                <h2>Log in</h2>
+                <p>Enter your email and we'll send you a login code</p>
+                <input type="email" placeholder="Email" style="width: 90%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;">
+                <button>Continue</button>
+                <p style="margin-top: 10px; font-size: 12px; color: gray;">Privacy</p>
+                <button onclick="closeDialog()">Close</button>
+            </div>
+        </div>
+        
+        <div class="trending">
+            <h4>Trending At Signature Glam</h4>
+        </div>
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('new-launches')">New Launches</div>
+            <div class="tab" onclick="showTab('bestsellers')">Bestsellers</div>
+        </div>
+        
+
+        <div class="tab-content active" id="new-launches">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/01.png" alt="New Launch 1" onmouseover="toggleImage(this, 'images/01.1.png')" 
+                     onmouseout="toggleImage(this, 'images/01.png')">
+                <h3>ACE OF FACE DEWY FOUNDATION</h3>
+                <p>RS. 799.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #e4b98d;"></span>
+                    <span class="color-circle" style="background-color: #f0c8a0;"></span>
+                    <span class="color-circle" style="background-color: #d2a583;"></span>
+                    <span class="color-circle" style="background-color: #c28f6a;"></span>
+                    <span class="color-circle" style="background-color: #af7e5a;"></span>
+                    <span class="color-circle" style="background-color: #8b5e3c;"></span>
+                </div>
+        
+            </div>
+        
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/02.png" alt="New Launch 2" onmouseover="toggleImage(this, 'images/02.2.png')" 
+                     onmouseout="toggleImage(this, 'images/02.png')">
+                <h3>GLIDE PEPTIDE SPF50 PA+++ LIP TREATMENT</h3>
+                <p>RS. 349.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #c88d75;"></span>
+                    <span class="color-circle" style="background-color: #8a4d3a;"></span>
+                    <span class="color-circle" style="background-color: #5a2d1d;"></span>
+                </div>
+        
+            </div>
+        
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/03.png" alt="New Launch 3" onmouseover="toggleImage(this, 'images/03.3.png')" 
+                     onmouseout="toggleImage(this, 'images/03.png')">
+                <h3>CLOUD NINE NIACINAMIDE GLOW BLUSH</h3>
+                <p>RS. 599.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #d44863;"></span>
+                    <span class="color-circle" style="background-color: #f46a87;"></span>
+                    <span class="color-circle" style="background-color: #c7335d;"></span>
+                    <span class="color-circle" style="background-color: #8b1d3d;"></span>
+                </div>
+        
+            </div>
+        
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/01.png" alt="New Launch 4" onmouseover="toggleImage(this, 'images/01.1.png')" 
+                     onmouseout="toggleImage(this, 'images/01.png')">
+                <h3>ACE OF FACE DEWY FOUNDATION</h3>
+                <p>RS. 799.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #b36c6c;"></span>
+                    <span class="color-circle" style="background-color: #7a3b3b;"></span>
+                    <span class="color-circle" style="background-color: #c54444;"></span>
+                    <span class="color-circle" style="background-color: #8f2929;"></span>
+                    <span class="color-circle" style="background-color: #6b1a1a;"></span>
+                </div>
+            </div>
+        
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/02.png" alt="New Launch 5" onmouseover="toggleImage(this, 'images/02.2.png')" 
+                     onmouseout="toggleImage(this, 'images/02.png')">
+                <h3>GLIDE PEPTIDE SPF50 PA+++ LIP TREATMENT</h3>
+                <p>RS. 349.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #d44863;"></span>
+                    <span class="color-circle" style="background-color: #f46a87;"></span>
+                    <span class="color-circle" style="background-color: #c7335d;"></span>
+                    <span class="color-circle" style="background-color: #8b1d3d;"></span>
+                </div>
+            </div>
+        </div>  
+        
+
+        <div class="tab-content" id="bestsellers">
+            
+            <div class="product-card">
+                <img src="images/04.png" alt="Bestseller 1" onmouseover="toggleImage(this, 'images/04.4.png')" 
+                     onmouseout="toggleImage(this, 'images/04.png')">
+                <h3>GLIDE PEPTIDE SERUM LIPSTICK</h3>
+                <p>RS. 499.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #b36c6c;"></span>
+                    <span class="color-circle" style="background-color: #7a3b3b;"></span>
+                    <span class="color-circle" style="background-color: #c54444;"></span>
+                    <span class="color-circle" style="background-color: #8f2929;"></span>
+                    <span class="color-circle" style="background-color: #6b1a1a;"></span>
+                </div>
+            </div>
+        
+            
+            <div class="product-card">
+                <img src="images/05.png" alt="Bestseller 2" onmouseover="toggleImage(this, 'images/05.5.png')" 
+                     onmouseout="toggleImage(this, 'images/05.png')">
+                <h3>HYDRATING PRIMER</h3>
+                <p>RS. 599.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #e4d1b5;"></span>
+                    <span class="color-circle" style="background-color: #d3c0a4;"></span>
+                    <span class="color-circle" style="background-color: #c0a78c;"></span>
+                </div>
+            </div>
+        
+            
+            <div class="product-card">
+                <img src="images/06.png" alt="Bestseller 3" onmouseover="toggleImage(this, 'images/06.6.png')" 
+                     onmouseout="toggleImage(this, 'images/06.png')">
+                <h3>SMUDGE-PROOF MATTE LIPSTICK</h3>
+                <p>RS. 399.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #d0484a;"></span>
+                    <span class="color-circle" style="background-color: #b03032;"></span>
+                    <span class="color-circle" style="background-color: #8a2528;"></span>
+                    <span class="color-circle" style="background-color: #6f1c1e;"></span>
+                </div>
+            </div>
+        
+            
+            <div class="product-card">
+                <img src="images/04.png" alt="Bestseller 4" onmouseover="toggleImage(this, 'images/04.4.png')" 
+                     onmouseout="toggleImage(this, 'images/04.png')">
+                <h3>GLIDE PEPTIDE SERUM LIPSTICK</h3>
+                <p>RS. 499.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #b36c6c;"></span>
+                    <span class="color-circle" style="background-color: #7a3b3b;"></span>
+                    <span class="color-circle" style="background-color: #c54444;"></span>
+                    <span class="color-circle" style="background-color: #8f2929;"></span>
+                    <span class="color-circle" style="background-color: #6b1a1a;"></span>
+                </div>
+            </div>
+        
+            
+            <div class="product-card">
+                <img src="images/05.png" alt="Bestseller 5" onmouseover="toggleImage(this, 'images/05.5.png')" 
+                     onmouseout="toggleImage(this, 'images/05.png')">
+                <h3>HYDRATING PRIMER</h3>
+                <p>RS. 599.00</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: #e4d1b5;"></span>
+                    <span class="color-circle" style="background-color: #d3c0a4;"></span>
+                    <span class="color-circle" style="background-color: #c0a78c;"></span>
+                </div>
+            </div>
+        </div>  
+        
+
+        <div class="magical-deals">
+            <h1>Magical Deals</h1>
+        </div>
+
+        <div class="magical-content">
+            <div class="magical-card">
+                <img src="images/magic01.png" alt=""> 
+                <h3>Pouches & Bags</h3>
+            <p>Hurry!⚡️ Upto 30% Off</p>
+            </div>
+
+            <div class="magical-card">
+                <img src="images/magic02.png" alt=""> 
+                <h3>Luscious Lipsticks</h3>
+            <p>Hurry!⚡️ Upto 20% Off</p>
+            </div>
+
+            <div class="magical-card">
+                <img src="images/magic03.png" alt=""> 
+                <h3>Summer Essentials</h3>
+            <p>Hurry!⚡️ Upto 25% Off</p>
+            </div>
+
+            <div class="magical-card">
+                <img src="images/magic04.png" alt=""> 
+                <h3>Gifting Combos</h3>
+            <p>Hurry!⚡️ Upto 30% Off</p>
+            </div>
+        </div>
+        
+    <section class="virtual-studio">
+        <img src="/images/virtual.png" alt="">
+    </section>
+
+    <div class="container">
+        <div class="title">Shop The Look</div>
+        <div class="line"></div>
+        <div class="looks-container">
+            <div class="look">
+                <img src="images/looks01.png" alt="Festive Look">
+                <div class="look-text">FESTIVE LOOK</div>
+            </div>
+            <div class="look">
+                <img src="images/looks02.png" alt="Funk Look">
+                <div class="look-text">FUNK LOOK</div>
+            </div>
+            <div class="look">
+                <img src="images/looks03.png" alt="Glam Look">
+                <div class="look-text">GLAM LOOK</div>
+            </div>
+            <div class="look">
+                <img src="images/looks04.png" alt="No Makeup Look">
+                <div class="look-text">NO MAKEUP LOOK</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">Shop By Range</div>
+        <div class="line"></div>
+        <div class="range-container">
+            <div class="range-item">
+                <img src="images/range01.png" alt="Eyeliner">
+                
+            </div>
+            <div class="range-item">
+                <img src="images/range02.png" alt="Concealer">
+                
+            </div>
+            <div class="range-item">
+                <img src="images/range03.png" alt="Eyeshadow">
+               
+            </div>
+            <div class="range-item">
+                <img src="images/range04.png" alt="Kajal">
+                
+            </div>
+            <div class="range-item">
+                <img src="images/range05.png" alt="Liquid Lipstick">
+               
+            </div>
+            <div class="range-item">
+                <img src="images/range06.png" alt="Highlighter">
+                
+            </div>
+            <div class="range-item">
+                <img src="images/range07.png" alt="Mascara">
+                
+            </div>
+            <div class="range-item">
+                <img src="images/range08.png" alt="Nail Polish">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="community-container">
+        <div class="community-content">
+            <h2>Community</h2>
+            <p>Share your <strong>#CBRoutine</strong> and tag 
+                <br><strong>@lovesignatureGlam</strong> for a chance to
+                <br> be featured!</p>
+            <button>Follow Us</button>
+        </div>
+        <div class="community-slider-container">
+            <div class="community-slider">
+                <img src="images/com01.png" alt="Community Image">
+                <img src="images/com05.png" alt="Community Image">
+                <img src="images/com03.png" alt="Community Image">
+                <img src="images/com04.png" alt="Community Image">
+                <img src="images/com02.png" alt="Community Image">
+                <img src="images/com01.png" alt="Community Image">
+                <img src="images/com05.png" alt="Community Image">
+                <img src="images/com03.png" alt="Community Image">
+                <img src="images/com04.png" alt="Community Image">
+                <img src="images/com02.png" alt="Community Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="title">Testimonials</div>
+        <div class="line"></div>
+
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <h3>Soumya Sahu</h3>
+                <div class="verified">✔ Verified review</div>
+                <div class="stars">⭐⭐⭐⭐☆</div>
+                <p>Classy design and super pigmented along with all the colors for correction and highlighting.... Love love love it.</p>
+                <div class="product-link">Character Pro Concealer Palette C-A302</div>
+            </div>
+
+            <div class="testimonial">
+                <h3>Priyanka Singh</h3>
+                <div class="verified">✔ Verified review</div>
+                <div class="stars">⭐⭐⭐⭐☆</div>
+                <p>I have used many high-end foundations but nothing comes close to it in giving a natural finish! It's super light, easily blendable, and long-lasting.</p>
+                <div class="product-link">Character - Hyaluronic Acid High Coverage Foundation</div>
+            </div>
+
+            <div class="testimonial">
+                <h3>Rajni Vasudevan</h3>
+                <div class="verified">✔ Verified review</div>
+                <div class="stars">⭐⭐⭐⭐☆</div>
+                <p>Coverage is medium to full..! Consistency is creamy and easily blendable into the skin. Doesn’t crease into fine lines.</p>
+                <div class="product-link">Character - Block Out Concealer</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ABOUT SIGNATURE GLAM</h3>
+                <ul>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">ARTISTRY</a></li>
+                    <li><a href="#">SIGNATURE VIVA GLAM</a></li>
+                    <li><a href="#">CONSCIOUS BEAUTY</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">SG PRO MEMBERSHIP</a></li>
+                    <li><a href="#">ANIMAL TESTING</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">BACK TO S.G</a></li>
+                    <li><a href="#">SIGN UP FOR EMAILS</a></li>
+                    <li><a href="#">PROMOTIONS</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>NEED HELP?</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">RETURNS & EXCHANGES</a></li>
+                    <li><a href="#">SHIPPING</a></li>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">LIVE CHAT</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>YOUR SIGNATURE GLAM STORE</h3>
+                <ul>
+                    <li><a href="#">FIND A STORE</a></li>
+                    <li><a href="#">MAKE-UP SERVICES</a></li>
+                    <li><a href="#">BOOK A MAKE-UP SERVICE</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>PRIVACY & TERMS</h3>
+                <ul>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                    <li><a href="#">TERMS OF SALES</a></li>
+                    <li><a href="#">COUNTERFEITING OF PRODUCTS</a></li>
+                    <li><a href="#">MANAGE SITE COOKIES</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <span class="icon-media">
+                    <i class="fa-brands fa-facebook"></i>
+                </span>
+                <span class="icon-media">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+
+                <span class="icon-media">
+                    <i class="fa-brands fa-youtube"></i>
+                </span>
+            </div>
+            <p>MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED. SOLD BY SHOPPERS STOP LTD.</p>
+        </div>
+    </footer>
+
+    <div class="chat-button">
+        <span>CHAT</span>
+         <span class="icon-chat">
+            <i class="fa-regular fa-comment"></i>
+         </span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
